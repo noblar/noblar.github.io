@@ -1,19 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
+    <title>Noblar</title>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noblar</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss-browser/4.1.13/index.global.js" integrity="sha512-RAOoTi4JqATUmfyj+oyxwAo3JtUeZwLsBpNisDcY5VzvXZARuuaE5zfwUCDVa2LBBUax70uBlO4+eZA1Y/tk0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
-</head>
-<body>
-    <p>In construction...</p>
-    <p>Coming soon...</p>
 
-    <img src="assets/images/noblar.png" />
+    <style>
+        .text-noblar {
+            color: #c59c5d;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-background text-text text-center dark:bg-black">
+    <main class="p-6">
+        <!-- Company Logo -->
+        <img
+            src="assets/images/noblar.png"
+            alt="Noblar"
+            class="mx-auto mb-4 w-128 h-128 object-contain"
+        />
+
+        <!-- Under Construction Message -->
+        <h1 class="text-3xl font-semibold mb-4 text-noblar">In constructie</h1>
+        <p class="text-lg text-gray-400">
+            <!-- In constructie <br /> -->
+        </p>
+
+        <!-- Optional accent line -->
+        <div class="mt-8 w-24 h-1 mx-auto bg-accent rounded-full"></div>
+    </main>
 </body>
 </html>
