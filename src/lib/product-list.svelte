@@ -16,7 +16,7 @@
             touchNavigation: true,
             loop: true,
             moreText: "Vezi toata descrierea",
-            moreLength: 50,
+            moreLength: 64,
             descPosition: "right"
         })
     }, 100);
@@ -104,10 +104,7 @@
 
     <Product image={P7} title="Măsuță" description={`
         <p>
-            Design elegant și finisaj premium.
-        </p>
-        <p>
-            Realizată din lemn masiv de stejar, cu îmbinări tăiate la 45° pentru un aspect rafinat și modern.
+            Design elegant și finisaj premium. Realizată din lemn masiv de stejar, cu îmbinări tăiate la 45° pentru un aspect rafinat și modern.
         </p>
         <p>
             Ideală ca noptieră sau măsuță de accent în spații sofisticate.
