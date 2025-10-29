@@ -16,9 +16,10 @@
             touchNavigation: true,
             loop: true,
             moreText: "Vezi toata descrierea",
+            moreLength: 50,
             descPosition: "right"
         })
-    }, 0);
+    }, 100);
 </script>
 
 <div class="grid gap-6 grid-cols-1 md:grid-cols-3 mt-6 md:mt-8 mx-8 md:mx-32">
