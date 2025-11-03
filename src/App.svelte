@@ -1,5 +1,6 @@
 <script lang="ts">
     import Logo from "./assets/noblar/noblar-cut.png";
+    import ContactWhatsapp from "./lib/contact-whatsapp.svelte";
     import ProductList from "./lib/product-list.svelte";
 </script>
 
@@ -24,8 +25,12 @@
 
     <p class="mt-4 text-sm text-noblar">
         Artă în lemn masiv. Elemente decorative din stejar nobil, create cu pasiune și precizie. <br/>
-        🌳 Fiecare piesă spune o poveste.
+        Fiecare piesă spune o poveste.
     </p>
+
+    <div class="mt-2">
+        <ContactWhatsapp text="Buna ziua, sunt interesat de un produs din oferta dumneavoastra" />
+    </div>
 </div>
 
 <ProductList />

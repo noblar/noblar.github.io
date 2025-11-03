@@ -8,6 +8,7 @@
     import P7 from "../assets/noblar/products/7.jpg";
     import P8 from "../assets/noblar/products/8.jpg";
     import P9 from "../assets/noblar/products/9.jpg";
+    import ContactWhatsapp from "./contact-whatsapp.svelte";
 
     import Product from "./product.svelte";
 
@@ -18,7 +19,20 @@
             moreText: "Vezi toata descrierea",
             moreLength: 64,
             descPosition: "right"
-        })
+        });
+
+        lb.on('slide_after_load', (data) => {
+            console.log(data);
+            setTimeout(() => {
+                data.slide.querySelector('.contact-wapp').onclick = () => {
+                    const phone = '15551234567';
+                    const text = `Sunt interesat de produsul: ${data.slideConfig.title}`;
+
+                    const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+                    window.open(url, '_blank', 'noopener');
+                }
+            }, 100);
+        });
     }, 100);
 </script>
 
@@ -35,12 +49,34 @@
             ✅ Gravură laser permanentă <br/>
             ✅ Design personalizat la cerere
         </p>
+
+        <a
+            class="contact-wapp text-lg text-lime-600"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Contacteaza-ma pe WhatsApp"
+        >
+            <i class="fa-brands fa-whatsapp"></i>
+            Contactează-mă pe WhatsApp
+        </a>
     `} />
 
     <Product image={P2} title="Masă din stejar masiv" description={`
         <p>
             Transformăm lemnul de stejar masiv într-o piesă centrală pentru casa ta. Fiecare masă este lucrată cu grijă, respectând fibra, culoarea și caracterul unic al lemnului. Realizăm la comandă, pentru ca tu să ai exact masa pe care o visezi.
         </p>
+
+        <a
+            class="contact-wapp text-lg text-lime-600"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Contacteaza-ma pe WhatsApp"
+        >
+            <i class="fa-brands fa-whatsapp"></i>
+            Contactează-mă pe WhatsApp
+        </a>
     `} />
 
     <Product image={P3} title="Birou din stejar masiv" description={`
@@ -50,6 +86,17 @@
         <p>
             Acest model poate fi realizat pe comandă, în dimensiunile, finisajele și esențele de lemn dorite, pentru a se integra perfect în orice interior. Perfect pentru birou, colțul de lucru de acasă sau spațiile creative.
         </p>
+
+        <a
+            class="contact-wapp text-lg text-lime-600"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Contacteaza-ma pe WhatsApp"
+        >
+            <i class="fa-brands fa-whatsapp"></i>
+            Contactează-mă pe WhatsApp
+        </a>
     `} />
 
     <Product image={P4} title="Măsuță din piatră naturală de travertin" description={`
@@ -62,6 +109,17 @@
         <p>
             Designul geometric, perfect echilibrat, transformă această măsuță într-un element statement al oricărei incăperi de lux - o expresie pură a rafinamentului natural și a măiestriei artizanale.
         </p>
+
+        <a
+            class="contact-wapp text-lg text-lime-600"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Contacteaza-ma pe WhatsApp"
+        >
+            <i class="fa-brands fa-whatsapp"></i>
+            Contactează-mă pe WhatsApp
+        </a>
     `} />
 
     <Product image={P5} title="Suport pentru plantă din lemn masiv" description={`
@@ -83,8 +141,17 @@
         <p>
             Disponibil la comandă, cu posibilitatea personalizării esenței de lemn și a finisajului.
         </p>
-        <p></p>
-        <p></p>
+
+        <a
+            class="contact-wapp text-lg text-lime-600"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Contacteaza-ma pe WhatsApp"
+        >
+            <i class="fa-brands fa-whatsapp"></i>
+            Contactează-mă pe WhatsApp
+        </a>
     `} />
 
     <Product image={P6} title="Masă laterală din stejar masiv" description={`
@@ -100,6 +167,17 @@
         <p>
             Ideală pentru spații premium - de la apartamente elegante la lounge-uri rafinate - această masă aduce un echilibru perfect între artă, funcționalitate și măiestrie în execuție.
         </p>
+
+        <a
+            class="contact-wapp text-lg text-lime-600"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Contacteaza-ma pe WhatsApp"
+        >
+            <i class="fa-brands fa-whatsapp"></i>
+            Contactează-mă pe WhatsApp
+        </a>
     `} />
 
     <Product image={P7} title="Măsuță" description={`
@@ -109,6 +187,17 @@
         <p>
             Ideală ca noptieră sau măsuță de accent în spații sofisticate.
         </p>
+
+        <a
+            class="contact-wapp text-lg text-lime-600"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Contacteaza-ma pe WhatsApp"
+        >
+            <i class="fa-brands fa-whatsapp"></i>
+            Contactează-mă pe WhatsApp
+        </a>
     `} />
 
     <Product image={P8} title="Suport carte din lemn masiv de stejar personalizabil" description={`
@@ -127,6 +216,17 @@
             📏 Dimensiuni: standard sau personalizate <br/>
             🎁 Ideal ca decor sau cadou pentru iubitorii de lectură
         </p>
+
+        <a
+            class="contact-wapp text-lg text-lime-600"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Contacteaza-ma pe WhatsApp"
+        >
+            <i class="fa-brands fa-whatsapp"></i>
+            Contactează-mă pe WhatsApp
+        </a>
     `} />
 
     <Product image={P9} title="Suport elegant pentru papuci" description={`
@@ -139,6 +239,17 @@
         <p>
             Ideal pentru holuri, dormitoare sau spații de relaxare, acest suport nu este doar practic, ci și o piesă decorativă deosebită, ce reflectă atenția la detalii și gustul pentru calitate autentică.
         </p>
+
+        <a
+            class="contact-wapp text-lg text-lime-600"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Contacteaza-ma pe WhatsApp"
+        >
+            <i class="fa-brands fa-whatsapp"></i>
+            Contactează-mă pe WhatsApp
+        </a>
     `} />
 
 </div>
