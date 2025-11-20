@@ -4,7 +4,7 @@
     }
 
     const props: Props = $props();
-    const phone = '15551234567';
+    const phone = '400769194863';
 
     const onclick = () => {
         const url = `https://wa.me/${phone}?text=${encodeURIComponent(props.text)}`;

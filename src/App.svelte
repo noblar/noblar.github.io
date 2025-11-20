@@ -11,7 +11,9 @@
     <nav class="flex items-center text-noblar text-2xl">
         <i class="fa-brands fa-facebook mr-4"></i>
         <i class="fa-brands fa-instagram mr-4"></i>
-        <i class="fa-brands fa-tiktok"></i>
+        <a href="https://www.tiktok.com/@noblar.wood" title="Noblar TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
     </nav>
 </header>
 
